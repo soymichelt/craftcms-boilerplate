@@ -4,7 +4,16 @@ services:
     image: craftcms/php-fpm:7.4-dev
     volumes:
       - .:/app
-    env_file: .env
+    environment:
+      ENVIRONMENT: "dev"
+      DB_DRIVER: "mysql"
+      DB_SERVER: mysql:3306
+      DB_PORT: "3306"
+      DB_DATABASE: "dev_craftcms"
+      DB_USER: "craftcms"
+      DB_PASSWORD: "SecretPassword"
+      DB_SCHEMA: "public"
+      DB_TABLE_PREFIX: ""
   nginx:
     image: nginx:stable-alpine
     ports:
