@@ -1,7 +1,10 @@
 version: "3.6"
 services:
   php-fpm:
-    image: craftcms/php-fpm:7.4-dev
+    image: craftcms/php-fpm-custom
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ./craft:/app
     links:
