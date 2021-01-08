@@ -9,6 +9,8 @@ services:
       - 8080:80
     volumes:
       - ./craft:/var/www/html:cached
+    links:
+      - mysql
     env_file: ./craft/.env
   mysql:
     image: mysql:8.0
