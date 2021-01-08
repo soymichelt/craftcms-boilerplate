@@ -2,4 +2,4 @@
 FROM craftcms/php-fpm:7.4
 
 USER root
-RUN chmod -R 777 /app
+RUN chmod -R 777 ./
