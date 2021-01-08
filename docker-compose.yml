@@ -3,31 +3,22 @@ services:
   php-fpm:
     image: craftcms/php-fpm:7.4-dev
     volumes:
-      - .:/app
+      - ./craft:/app
     links:
       - mysql
-    environment:
-      ENVIRONMENT: "dev"
-      DB_DRIVER: "mysql"
-      DB_SERVER: mysql:3306
-      DB_PORT: "3306"
-      DB_DATABASE: "dev_craftcms"
-      DB_USER: "craftcms"
-      DB_PASSWORD: "SecretPassword"
-      DB_SCHEMA: "public"
-      DB_TABLE_PREFIX: ""
+    env_file: ./craft/.env
   nginx:
     image: nginx:stable-alpine
     ports:
       - 8000:80
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - .:/app
+      - ./craft:/app
   console:
     image: craftcms/cli:7.4-dev
     volumes:
-      - .:/app
-    env_file: .env
+      - ./craft:/app
+    env_file: ./craft/.env
     command: ["./craft", "queue/listen"]
   mysql:
     image: mysql:8.0
