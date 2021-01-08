@@ -4,6 +4,8 @@ services:
     image: craftcms/php-fpm:7.4-dev
     volumes:
       - .:/app
+    links:
+      - mysql
     environment:
       ENVIRONMENT: "dev"
       DB_DRIVER: "mysql"
