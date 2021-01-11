@@ -1,16 +1,25 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.64',
-    'version' => '1.0.64.0',
+    'pretty_version' => '1.0.0+no-version-set',
+    'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
     'reference' => NULL,
-    'name' => 'craftcms/craft',
+    'name' => '__root__',
   ),
   'versions' => 
   array (
+    '__root__' => 
+    array (
+      'pretty_version' => '1.0.0+no-version-set',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => NULL,
+    ),
     'bower-asset/inputmask' => 
     array (
       'provided' => 
@@ -95,21 +104,12 @@
     ),
     'craftcms/cms' => 
     array (
-      'pretty_version' => '3.5.17',
-      'version' => '3.5.17.0',
+      'pretty_version' => '3.5.17.1',
+      'version' => '3.5.17.1',
       'aliases' => 
       array (
       ),
-      'reference' => '6725219cbeb73e9b01b830668946544f9585baa5',
-    ),
-    'craftcms/craft' => 
-    array (
-      'pretty_version' => '1.0.64',
-      'version' => '1.0.64.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => NULL,
+      'reference' => 'c4b999b325736968a05d3bcc1a5a2444dfbe9323',
     ),
     'craftcms/oauth2-craftid' => 
     array (
@@ -163,6 +163,15 @@
       ),
       'reference' => '0f407c43b953d571421e0020ba92082ed5fb7620',
     ),
+    'dnoegel/php-xdg-base-dir' => 
+    array (
+      'pretty_version' => 'v0.1.1',
+      'version' => '0.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd',
+    ),
     'doctrine/lexer' => 
     array (
       'pretty_version' => '1.0.2',
@@ -174,12 +183,12 @@
     ),
     'egulias/email-validator' => 
     array (
-      'pretty_version' => '2.1.24',
-      'version' => '2.1.24.0',
+      'pretty_version' => '2.1.25',
+      'version' => '2.1.25.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ca90a3291eee1538cd48ff25163240695bd95448',
+      'reference' => '0dbf5d78455d4d6a41d186da50adc1122ec066f4',
     ),
     'elvanto/litemoji' => 
     array (
@@ -361,6 +370,15 @@
       ),
       'reference' => '0b0fd254e33e2d60bc2bcd7867f2ab3cdd05a843',
     ),
+    'nikic/php-parser' => 
+    array (
+      'pretty_version' => 'v4.10.4',
+      'version' => '4.10.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c6d052fc58cb876152f89f532b95a8d7907e7f0e',
+    ),
     'opis/closure' => 
     array (
       'pretty_version' => '3.6.1',
@@ -473,6 +491,15 @@
       array (
         0 => '1.0.0',
       ),
+    ),
+    'psy/psysh' => 
+    array (
+      'pretty_version' => 'v0.10.5',
+      'version' => '0.10.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7c710551d4a2653afa259c544508dc18a9098956',
     ),
     'ralouphie/getallheaders' => 
     array (
@@ -645,6 +672,15 @@
       ),
       'reference' => '07432804942b9f6dd7b7377faf9920af5f95d70a',
     ),
+    'symfony/var-dumper' => 
+    array (
+      'pretty_version' => 'v3.3.6',
+      'version' => '3.3.6.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b2623bccb969ad595c2090f9be498b74670d0663',
+    ),
     'symfony/yaml' => 
     array (
       'pretty_version' => 'v3.3.6',
@@ -809,21 +845,30 @@
     ),
     'yiisoft/yii2-debug' => 
     array (
-      'pretty_version' => '2.1.15',
-      'version' => '2.1.15.0',
+      'pretty_version' => '2.1.16',
+      'version' => '2.1.16.0',
       'aliases' => 
       array (
       ),
-      'reference' => '317f85c1ac7a8c0b73eea345a49066b5570aa2c6',
+      'reference' => '0d8ce76b2dd036a5fc38b26434e1c672ad8975a9',
     ),
     'yiisoft/yii2-queue' => 
     array (
-      'pretty_version' => '2.3.0',
-      'version' => '2.3.0.0',
+      'pretty_version' => '2.3.1',
+      'version' => '2.3.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '25c1142558768ec0e835171c972a4edc2fb59cf0',
+      'reference' => 'a6758a2b9c2d8aca9b949f4faa9e3cca0dfbc8be',
+    ),
+    'yiisoft/yii2-shell' => 
+    array (
+      'pretty_version' => '2.0.4',
+      'version' => '2.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6832c3dde303d89f7123bdbcb8cb4d5c80fae4df',
     ),
     'yiisoft/yii2-swiftmailer' => 
     array (
